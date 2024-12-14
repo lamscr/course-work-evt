@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<title>My Presents</title>
+<link rel="stylesheet" type="text/css" href="css/contact.css">
+<link rel="stylesheet" type="text/css" href="css/global.css">
+<script src="script.js"></script>
+</head>
+<body>
+
+<header class="header">
+    <div class="header__line">
+        <div class="container">
+            <div class="header__line-wrapper">
+                <a class="header__phone" href="tel:+375291234567">+375291234567</a>
+            </div> 
+        </div>
+    </div>
+    <div class="container">
+        <div class="header__wrapper" id="header__wrapper">
+            <div class="header__block">
+                <nav class="nav">
+                    <a class="nav__link" href="404.html">Каталог</a>
+                    <a class="nav__link" href="404.html">Акции</a>
+                    <a class="nav__link" href="contact.html">Контакты</a>
+                </nav>
+                <ul class="menu">
+                    <li><a class="menuItem" href="404.html">Каталог</a></li>
+                    <li><a class="menuItem" href="404.html">Акции</a></li>
+                    <li><a class="menuItem" href="contact.html">Контакты</a></li>
+                </ul>
+                <button class="toggle__burger">
+                    <img class="menuIcon" id="menuIcon" src="assets/burger_menu.png" alt="">
+                    <img class="closeIcon" src="assets/close.png" alt="">
+                </button>
+            </div>
+            <div class="logo"><a href="index.html"><img src="assets/Logo_vector_with_text.png" alt="logo"></a></div>
+            <div class="small__logo"><a href="index.html"><img src="assets/Logo_vector_present.png" alt="logo"></a></div>
+            <div class="header__block right">
+                <div class="header__action-wrapper">
+                    <a class="header__link" href="404.html">
+                        <img id="accountIcon" src="assets/account.png" alt="logo"> 
+                    </a>
+                    <a class="header__link" href="404.html">
+                        <img id="cartIcon" src="assets/cart.png" alt="logo"> 
+                    </a>
+                    <a class="header__link" onclick="toggleTheme()"><img id="themeIcon" src="assets/sun.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <h1 class="text__h1">Контакты</h1>
+    <div class="content__wrapper">
+        <div class="text__block">
+            <div class="adres__block">
+                <p><b>Наш адрес:</b></p>
+                <p class="solid">г. Минск, ул. Седых 1</p>
+            </div>
+            <div class="phone__block">
+                <p><b>Телефоны:</b></p>
+                <p class="solid">+375291234567</p>
+                <p class="solid">+375291234567</p>
+            </div>
+            <div class="time__block">
+                <p><b>Режим работы:</b></p>
+                <p class="solid">Пн. – Сб.: с 9:00 до 20:00</p>
+            </div>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2347.753979654932!2d27.620680325985706!3d53.95387746660863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcf36972c141d%3A0x93e65e1a84987184!2z0YPQuy4g0KHQtdC00YvRhSAxLCDQnNC40L3RgdC6LCDQnNC40L3RgdC60LDRjyDQvtCx0LvQsNGB0YLRjCAyMjMwNDA!5e0!3m2!1sru!2sby!4v1731338508699!5m2!1sru!2sby" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    </div>
+    
+</main>
+<footer class="footer">
+    <div class="footer__bg"> 
+        <div class="container">
+            <div class="footer__content-wrapper">
+                    <div class="footer__item-block">
+                        <div class="footer__phone">
+                            <h4 class="our__phone">Наш телефон:</h4>
+                            <a class="phone__text" href="tel: +375291234567">+375291234567</a>
+                        </div>
+                    </div>
+                    <a href="#header__wrapper"><img class="footer__logo" src="assets/Logo_vector_with_text.png" alt=""></a>
+                    <div class="footer__item-block right">
+                        <div class="footer__links-wrapper">
+                            <a class="footer__links" href="404.html">Акции</a>
+                            <a class="footer__links" href="404.html">Каталог</a>
+                            <a class="footer__links" href="contact.html">Контакты</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+
+const menu = document.querySelector(".menu");
+const menuItems = document.querySelectorAll(".menuItem");
+const hamburger= document.querySelector(".toggle__burger");
+const closeIcon= document.querySelector(".closeIcon");
+const menuIcon = document.querySelector(".menuIcon");
+
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    closeIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    closeIcon.style.display = "block";
+    menuIcon.style.display = "none";
+  }
+}
+
+hamburger.addEventListener("click", toggleMenu);
+
+menuItems.forEach( 
+  function(menuItem) { 
+    menuItem.addEventListener("click", toggleMenu);
+  }
+)
+</script>
+</body>
+</html>

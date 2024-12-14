@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<title>My Presents</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/global.css">
+<script src="script.js"></script>
+</head>
+<body>
+
+<header class="header">
+    <div class="header__line">
+        <div class="container">
+            <div class="header__line-wrapper">
+                <a class="header__phone" href="tel:+375291234567">+375291234567</a>
+            </div> 
+        </div>
+    </div>
+    <div class="container">
+        <div class="header__wrapper" id="header__wrapper">
+            <div class="header__block">
+                <nav class="nav">
+                    <a class="nav__link" href="404.html">Каталог</a>
+                    <a class="nav__link" href="404.html">Акции</a>
+                    <a class="nav__link" href="contact.html">Контакты</a>
+                </nav>
+                <ul class="menu">
+                    <li><a class="menuItem" href="404.html">Каталог</a></li>
+                    <li><a class="menuItem" href="404.html">Акции</a></li>
+                    <li><a class="menuItem" href="contact.html">Контакты</a></li>
+                </ul>
+                <button class="toggle__burger">
+                    <img class="menuIcon" id="menuIcon" src="assets/burger_menu.png" alt="">
+                    <img class="closeIcon" src="assets/close.png" alt="">
+                </button>
+            </div>
+            <div class="logo"><a href="index.html"><img src="assets/Logo_vector_with_text.png" alt="logo"></a></div>
+            <div class="small__logo"><a href="index.html"><img src="assets/Logo_vector_present.png" alt="logo"></a></div>
+            <div class="header__block right">
+                <div class="header__action-wrapper">
+                    <a class="header__link" href="404.html"><img id="accountIcon" src="assets/account.png" alt="logo"></a>
+                    <a class="header__link" href="404.html"><img id="cartIcon" src="assets/cart.png" alt="logo"> </a>
+                    <a class="header__link" onclick="toggleTheme()"><img id="themeIcon" src="assets/sun.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="assets/slider_1.png" style="width:100%" alt="">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="assets/slider_2.png" style="width:100%" alt="">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)"><img class="button__slide" src="assets/prev.png" alt=""></a>
+        <a class="next" onclick="plusSlides(1)"><img class="button__slide" src="assets/next.png" alt=""></a>
+    </div>
+    <div class="container">
+        <div class="text__h1">Персональные подарки</div>
+        <div>
+            <div class="product__wrapper" id="product__wrapper">
+                <div class="product__block">
+                    <div class="product__item">
+                        <img class="product__image" src="assets/product_image1.png" alt="">
+                        <h3 class="product__title">Зажигалка Zippo "Самурай 360° Дизайн"</h3>
+                        <div class="product__text__button">
+                            <h4 class="product__price">349 руб./шт</h4>
+                            <div class="buy_button"><a class="button__text" href="product_page.html" >Купить</a></div>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="product__block">
+                    <div class="product__item">
+                        <img class="product__image" src="assets/product_image2.png" alt="">
+                        <h3 class="product__title">Зажигалка Zippo "Панда Дизайн"</h3>
+                        <div class="product__text__button">
+                            <h4 class="product__price">299 руб./шт</h4>
+                            <div class="buy_button"><a class="button__text" href="404.html" >Купить</a></div>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="product__block">
+                    <div class="product__item">
+                        <img class="product__image" src="assets/product_image3.png" alt="">
+                        <h3 class="product__title">Зажигалка Zippo "Боевой дракон"</h3>
+                        <div class="product__text__button">
+                            <h4 class="product__price">315 руб./шт</h4>
+                            <div class="buy_button"><a class="button__text" href="404.html" >Купить</a></div>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="product__block">
+                    <div class="product__item">
+                        <img class="product__image" src="assets/product_image4.png" alt="">
+                        <h3 class="product__title">Зажигалка Zippo "Марс Дизайн"</h3>
+                        <div class="product__text__button">
+                            <h4 class="product__price">299 руб./шт</h4>
+                            <div class="buy_button"><a class="button__text" href="404.html" >Купить</a></div>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="product__block">
+                    <div class="product__item">
+                        <img class="product__image" src="assets/product_image5.png" alt="">
+                        <h3 class="product__title">Зажигалка Zippo "Римский бог Плутон"</h3>
+                        <div class="product__text__button">
+                            <h4 class="product__price">289 руб./шт</h4>
+                            <div class="buy_button"><a class="button__text" href="404.html" >Купить</a></div>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="product__block">
+                    <div class="product__item">
+                        <img class="product__image" src="assets/product_image6.png" alt="">
+                        <h3 class="product__title">Зажигалка Zippo "Римский бог Марс"</h3>
+                        <div class="product__text__button">
+                            <h4 class="product__price">240 руб./шт</h4>
+                            <div class="buy_button"><a class="button__text" href="404.html" >Купить</a></div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer__bg"> 
+        <div class="container">
+            <div class="footer__content-wrapper">
+                    <div class="footer__item-block">
+                        <div class="footer__phone">
+                            <h4 class="our__phone">Наш телефон:</h4>
+                            <a class="phone__text" href="tel:+375291234567">+375291234567</a>
+                        </div>
+                    </div>
+                    <a href="#header__wrapper"><img class="footer__logo" src="assets/Logo_vector_with_text.png" alt=""></a>
+                    <div class="footer__item-block right">
+                        <div class="footer__links-wrapper">
+                            <a class="footer__links" href="">Акции</a>
+                            <a class="footer__links" href="">Каталог</a>
+                            <a class="footer__links" href="">Контакты</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    const menu = document.querySelector(".menu");
+    const menuItems = document.querySelectorAll(".menuItem");
+    const hamburger= document.querySelector(".toggle__burger");
+    const closeIcon= document.querySelector(".closeIcon");
+    const menuIcon = document.querySelector(".menuIcon");
+    
+    function toggleMenu() {
+      if (menu.classList.contains("showMenu")) {
+        menu.classList.remove("showMenu");
+        closeIcon.style.display = "none";
+        menuIcon.style.display = "block";
+      } else {
+        menu.classList.add("showMenu");
+        closeIcon.style.display = "block";
+        menuIcon.style.display = "none";
+      }
+    }
+    
+    hamburger.addEventListener("click", toggleMenu);
+    
+    menuItems.forEach( 
+      function(menuItem) { 
+        menuItem.addEventListener("click", toggleMenu);
+      }
+    )
+</script>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+    function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    }
+ </script> 
+</body>
+</html>
